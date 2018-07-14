@@ -9938,3 +9938,9 @@ table-danger,
 .list-group {
     font-size: 0.875em
 }
+
+.page-footer {
+    background-color: rgb(201, 201, 201);
+    color: rgb(59, 116, 201);
+    font-size: 72;
+}
