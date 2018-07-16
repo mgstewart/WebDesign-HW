@@ -1,7 +1,7 @@
 <!Doctype HTML>
 <head>
     <meta charset="UTF-8">
-    <title>Temperature vs. Latitude</title>
+    <title>Wind Speed vs. Latitude</title>
     <link rel="stylesheet" href="./bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -21,10 +21,10 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./maxtemp_v_lat.html">Temp vs. Latitude</a>
                             <a class="dropdown-item" href="./maxtemp_v_lat_abs.html">Temp vs. Absolute Lat.</a>
-                            <a class="dropdown-item" href="./cloud_v_lat.html">Cloud Coverage vs. Lat.</a>
-                            <a class="dropdown-item" href="./wind_v_lat.html">Wind Speed vs. Lat.</a>
                             <a class="dropdown-item" href="./humidity_v_lat.html">Humidity vs. Lat.</a>
+                            <a class="dropdown-item" href="./cloud_v_lat.html">Cloud Coverage vs. Lat.</a>
                         </div>
                 </li>
             <li class="nav-item">
@@ -38,25 +38,24 @@
         </div>
     </nav>
     <h1>
-        Temperature by Latitude
+        Wind Speed by Latitude
     </h1>
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-xs-12 col-sm-12">
-                <a href="./maxtemp_v_lat.png"><img src="./maxtemp_v_lat.png" title="Click to view/download the image"></a> 
+                <a href="./wind_v_lat.png"><img src="./wind_v_lat.png" title="Click to view/download the image"></a> 
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
                 <p>
-                    Relationship of Temperature and Latitude Position: The data decisively reveals what has been known since 
-                    antiquity that regions closer to the equator of the Earth are warmer. 
-                    This linear relationship is best revealed by using absolute latitudes. 
-                    However, this approach does mask the apparent non-linear relationship of extreme latitutdes influencing 
-                    temperatures in the southern hemisphere more than the northern hemisphere. 
-                    This could be explained due to a few things. The first is that there are less cities in the southern hemisphere 
-                    than in the north (due to both land surface area being lower and diasporic consequences of human migration).
+                    Windspeed also has no immediate trends based on latitude except that there appears to be a general 
+                    rise in wind speed when traveling further north in the hemisphere. This could be due to the terrain 
+                    influencing wind speed as steppes, tundras, and other flatlands would experience higher wind speeds.
+                    As with humidity and cloud coverage, wind speed is a function of a more complex system than temperature,
+                    which is based solely on radiation from the sun (and to a much lesser extent georadiation).
                 </p>
                 <p>
-                    Click <a href="maxtemp_v_lat_abs.html"> here </a> to see the relationship in absolute latitude coordinates.
+                    We should all be thankful the mean wind speed falls within the 0-5mph range, otherwise Earth would not
+                    be a very pleasant place to inhabit!
                 </p>
             </div>
         </div>

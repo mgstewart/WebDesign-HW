@@ -1,7 +1,7 @@
 <!Doctype HTML>
 <head>
     <meta charset="UTF-8">
-    <title>Temperature vs. Latitude</title>
+    <title>Relative Humidity vs. Latitude</title>
     <link rel="stylesheet" href="./bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -21,10 +21,10 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./maxtemp_v_lat.html">Temp vs. Latitude</a>
                             <a class="dropdown-item" href="./maxtemp_v_lat_abs.html">Temp vs. Absolute Lat.</a>
-                            <a class="dropdown-item" href="./cloud_v_lat.html">Cloud Coverage vs. Lat.</a>
                             <a class="dropdown-item" href="./wind_v_lat.html">Wind Speed vs. Lat.</a>
-                            <a class="dropdown-item" href="./humidity_v_lat.html">Humidity vs. Lat.</a>
+                            <a class="dropdown-item" href="./cloud_v_lat.html">Cloud Coverage vs. Lat.</a>
                         </div>
                 </li>
             <li class="nav-item">
@@ -38,25 +38,21 @@
         </div>
     </nav>
     <h1>
-        Temperature by Latitude
+        Humidity by Latitude
     </h1>
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-xs-12 col-sm-12">
-                <a href="./maxtemp_v_lat.png"><img src="./maxtemp_v_lat.png" title="Click to view/download the image"></a> 
+                <a href="./humidity_v_lat.png"><img src="./humidity_v_lat.png" title="Click to view/download the image"></a> 
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
                 <p>
-                    Relationship of Temperature and Latitude Position: The data decisively reveals what has been known since 
-                    antiquity that regions closer to the equator of the Earth are warmer. 
-                    This linear relationship is best revealed by using absolute latitudes. 
-                    However, this approach does mask the apparent non-linear relationship of extreme latitutdes influencing 
-                    temperatures in the southern hemisphere more than the northern hemisphere. 
-                    This could be explained due to a few things. The first is that there are less cities in the southern hemisphere 
-                    than in the north (due to both land surface area being lower and diasporic consequences of human migration).
-                </p>
-                <p>
-                    Click <a href="maxtemp_v_lat_abs.html"> here </a> to see the relationship in absolute latitude coordinates.
+                    There is a broad distribution across all humidities for positive and negative latitudes. 
+                    There does appear to be a higher density of 100% humidity cities within 20 degrees of the equator, 
+                    but data suggest there are non-humid cities right on the equator as well. This prevents any
+                    conclusions from being drawn on these data. When one considers that humidity is a much more transient
+                    phenomenon (varying greatly within the day) and an output of a more complex system than temperature,
+                    the lack of a correlation in a single-day random sampling is not surprising.
                 </p>
             </div>
         </div>

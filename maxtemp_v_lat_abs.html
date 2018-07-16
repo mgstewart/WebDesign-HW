@@ -21,9 +21,9 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./maxtemp_v_lat_abs.html">Temp vs. Absolute Lat.</a>
+                            <a class="dropdown-item" href="./maxtemp_v_lat.html">Temp vs. Latitude</a>
                             <a class="dropdown-item" href="./cloud_v_lat.html">Cloud Coverage vs. Lat.</a>
-                            <a class="dropdown-item" href="./wind_v_lat.html">Wind Speed vs. Lat.</a>
+                            <a class="dropdown-item" href="./wind_v_lat.png">Wind Speed vs. Lat.</a>
                             <a class="dropdown-item" href="./humidity_v_lat.html">Humidity vs. Lat.</a>
                         </div>
                 </li>
@@ -38,25 +38,21 @@
         </div>
     </nav>
     <h1>
-        Temperature by Latitude
+        Temperature by Absolute Latitude
     </h1>
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-xs-12 col-sm-12">
-                <a href="./maxtemp_v_lat.png"><img src="./maxtemp_v_lat.png" title="Click to view/download the image"></a> 
+                <a href="./maxtemp_v_lat_abs.png"><img src="./maxtemp_v_lat_abs.png" title="Click to view/download the image"></a> 
             </div>
             <div class="col-md-5 col-xs-12 col-sm-12">
                 <p>
-                    Relationship of Temperature and Latitude Position: The data decisively reveals what has been known since 
-                    antiquity that regions closer to the equator of the Earth are warmer. 
-                    This linear relationship is best revealed by using absolute latitudes. 
-                    However, this approach does mask the apparent non-linear relationship of extreme latitutdes influencing 
-                    temperatures in the southern hemisphere more than the northern hemisphere. 
-                    This could be explained due to a few things. The first is that there are less cities in the southern hemisphere 
-                    than in the north (due to both land surface area being lower and diasporic consequences of human migration).
-                </p>
-                <p>
-                    Click <a href="maxtemp_v_lat_abs.html"> here </a> to see the relationship in absolute latitude coordinates.
+                    Relationship of Temperature and Absolute Latitude Position: This graphic was developed to show the linear Relationship
+                    between proximity to equator (by using the absolute value of the lattitude from zero, rather than signed values). Because
+                    we know, astronomically, the Earth's equator is both closest to the sun and also least prone to the tilt of the Earth.
+                    Indeed, unlike the <a href="./maxtemp_v_lat.html">non-absolute values</a>, the linear relationship reveals itself readily.
+                    Interestingly, the effect is not as significant as one might expect, although the bias of cities in the northern hemisphere
+                    and the fixed-date of sampling likely do not reflect this relationship exactly.
                 </p>
             </div>
         </div>
